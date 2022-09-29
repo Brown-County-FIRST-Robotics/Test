@@ -1,0 +1,4 @@
+See file:///home/redbird/Desktop/Code/Test/build/tmp/linkFrcUserProgramLinuxathenaReleaseExecutable/output.txt for all output for linkFrcUserProgramLinuxathenaReleaseExecutable.
+linking frcUserProgram successful.
+
+Finished linkFrcUserProgramLinuxathenaReleaseExecutable, see full log file:///home/redbird/Desktop/Code/Test/build/tmp/linkFrcUserProgramLinuxathenaReleaseExecutable/output.txt.

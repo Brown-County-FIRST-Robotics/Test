@@ -1,2 +1,7 @@
 .gradle
 build/
+
+#simulator-related files
+simgui-ds.json
+simgui-window.json
+simgui.json

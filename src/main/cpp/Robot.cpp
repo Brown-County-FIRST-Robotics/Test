@@ -1,16 +1,14 @@
-#include "ctre/Phoenix.h"
-#include "frc/TimedRobot.h"
-#include "frc/XboxController.h"
+#include "Robot.h"
 
-using namespace frc;
+#include <frc/smartdashboard/SmartDashboard.h>
+#include <frc2/command/CommandScheduler.h>
 
-class Robot : public TimedRobot {
-  WPI_TalonFX motor{0};
-  
-};
+void Robot::RobotPeriodic() {
+  frc2::CommandScheduler::GetInstance().Run();
+}
 
 #ifndef RUNNING_FRC_TESTS
 int main() {
-  return StartRobot<Robot>();
+  return frc::StartRobot<Robot>();
 }
 #endif

@@ -1,4 +1,4 @@
-See file:///home/redbird/Desktop/Code/Test/build/tmp/linkFrcUserProgramLinuxathenaDebugExecutable/output.txt for all output for linkFrcUserProgramLinuxathenaDebugExecutable.
+See file:///G:/Robotics/CommandTest/build/tmp/linkFrcUserProgramLinuxathenaDebugExecutable/output.txt for all output for linkFrcUserProgramLinuxathenaDebugExecutable.
 linking frcUserProgram successful.
 
-Finished linkFrcUserProgramLinuxathenaDebugExecutable, see full log file:///home/redbird/Desktop/Code/Test/build/tmp/linkFrcUserProgramLinuxathenaDebugExecutable/output.txt.
+Finished linkFrcUserProgramLinuxathenaDebugExecutable, see full log file:///G:/Robotics/CommandTest/build/tmp/linkFrcUserProgramLinuxathenaDebugExecutable/output.txt.

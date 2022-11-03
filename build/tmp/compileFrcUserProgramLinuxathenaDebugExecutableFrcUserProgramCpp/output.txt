@@ -1,4 +1,160 @@
-See file:///home/redbird/Desktop/Code/Test/build/tmp/compileFrcUserProgramLinuxathenaDebugExecutableFrcUserProgramCpp/output.txt for all output for compileFrcUserProgramLinuxathenaDebugExecutableFrcUserProgramCpp.
-compiling Robot.cpp successful.
+See file:///C:/Users/glade_qmxy3yu/Desktop/Robotics/CommandTest/build/tmp/compileFrcUserProgramLinuxathenaDebugExecutableFrcUserProgramCpp/output.txt for all output for compileFrcUserProgramLinuxathenaDebugExecutableFrcUserProgramCpp.
+compiling TalonFX.cpp failed.
+C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\cpp\subsystems\TalonFX.cpp:3:1: error: reference to 'TalonFX' is ambiguous
+ TalonFX::TalonFX() : motor{0} {} //constructor
+ ^~~~~~~
+In file included from C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\cpp\subsystems\TalonFX.cpp:1:0:
+C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\include/subsystems/TalonFX.h:6:7: note: candidates are: class TalonFX
+ class TalonFX : public frc2::SubsystemBase {
+       ^~~~~~~
+In file included from C:\Users\glade_qmxy3yu\.gradle\caches\transforms-3\da9ad472860049f936d9f5329063fadc\transformed\api-cpp-5.21.3-headers/ctre/Phoenix.h:21:0,
+                 from C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\include/subsystems/TalonFX.h:4,
+                 from C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\cpp\subsystems\TalonFX.cpp:1:
+C:\Users\glade_qmxy3yu\.gradle\caches\transforms-3\da9ad472860049f936d9f5329063fadc\transformed\api-cpp-5.21.3-headers/ctre/phoenix/motorcontrol/can/TalonFX.h:152:11: note:                 class ctre::phoenix::motorcontrol::can::TalonFX
+     class TalonFX : public virtual BaseTalon
+           ^~~~~~~
+C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\cpp\subsystems\TalonFX.cpp:3:31: error: expected unqualified-id before '{' token
+ TalonFX::TalonFX() : motor{0} {} //constructor
+                               ^
+C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\cpp\subsystems\TalonFX.cpp:5:1: error: reference to 'TalonFX' is ambiguous
+ TalonFX::ChangeMotor(bool turnOn) {
+ ^~~~~~~
+In file included from C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\cpp\subsystems\TalonFX.cpp:1:0:
+C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\include/subsystems/TalonFX.h:6:7: note: candidates are: class TalonFX
+ class TalonFX : public frc2::SubsystemBase {
+       ^~~~~~~
+In file included from C:\Users\glade_qmxy3yu\.gradle\caches\transforms-3\da9ad472860049f936d9f5329063fadc\transformed\api-cpp-5.21.3-headers/ctre/Phoenix.h:21:0,
+                 from C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\include/subsystems/TalonFX.h:4,
+                 from C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\cpp\subsystems\TalonFX.cpp:1:
+C:\Users\glade_qmxy3yu\.gradle\caches\transforms-3\da9ad472860049f936d9f5329063fadc\transformed\api-cpp-5.21.3-headers/ctre/phoenix/motorcontrol/can/TalonFX.h:152:11: note:                 class ctre::phoenix::motorcontrol::can::TalonFX
+     class TalonFX : public virtual BaseTalon
+           ^~~~~~~
 
-Finished compileFrcUserProgramLinuxathenaDebugExecutableFrcUserProgramCpp, see full log file:///home/redbird/Desktop/Code/Test/build/tmp/compileFrcUserProgramLinuxathenaDebugExecutableFrcUserProgramCpp/output.txt.
+compiling RobotContainer.cpp failed.
+In file included from C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\include/RobotContainer.h:6:0,
+                 from C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\cpp\RobotContainer.cpp:1:
+C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\include/commands/SpinMotor.h:10:29: error: expected ')' before '*' token
+   explicit SpinMotor(TalonFX* subsystem);
+                             ^
+In file included from C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\include/RobotContainer.h:6:0,
+                 from C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\cpp\RobotContainer.cpp:1:
+C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\include/commands/SpinMotor.h:19:3: error: reference to 'TalonFX' is ambiguous
+   TalonFX* m_subsystem;
+   ^~~~~~~
+In file included from C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\include/commands/SpinMotor.h:6:0,
+                 from C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\include/RobotContainer.h:6,
+                 from C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\cpp\RobotContainer.cpp:1:
+C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\include/subsystems/TalonFX.h:6:7: note: candidates are: class TalonFX
+ class TalonFX : public frc2::SubsystemBase {
+       ^~~~~~~
+In file included from C:\Users\glade_qmxy3yu\.gradle\caches\transforms-3\da9ad472860049f936d9f5329063fadc\transformed\api-cpp-5.21.3-headers/ctre/Phoenix.h:21:0,
+                 from C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\include/subsystems/TalonFX.h:4,
+                 from C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\include/commands/SpinMotor.h:6,
+                 from C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\include/RobotContainer.h:6,
+                 from C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\cpp\RobotContainer.cpp:1:
+C:\Users\glade_qmxy3yu\.gradle\caches\transforms-3\da9ad472860049f936d9f5329063fadc\transformed\api-cpp-5.21.3-headers/ctre/phoenix/motorcontrol/can/TalonFX.h:152:11: note:                 class ctre::phoenix::motorcontrol::can::TalonFX
+     class TalonFX : public virtual BaseTalon
+           ^~~~~~~
+In file included from C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\cpp\RobotContainer.cpp:1:0:
+C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\include/RobotContainer.h:17:3: error: reference to 'TalonFX' is ambiguous
+   TalonFX motor;
+   ^~~~~~~
+In file included from C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\include/commands/SpinMotor.h:6:0,
+                 from C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\include/RobotContainer.h:6,
+                 from C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\cpp\RobotContainer.cpp:1:
+C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\include/subsystems/TalonFX.h:6:7: note: candidates are: class TalonFX
+ class TalonFX : public frc2::SubsystemBase {
+       ^~~~~~~
+In file included from C:\Users\glade_qmxy3yu\.gradle\caches\transforms-3\da9ad472860049f936d9f5329063fadc\transformed\api-cpp-5.21.3-headers/ctre/Phoenix.h:21:0,
+                 from C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\include/subsystems/TalonFX.h:4,
+                 from C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\include/commands/SpinMotor.h:6,
+                 from C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\include/RobotContainer.h:6,
+                 from C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\cpp\RobotContainer.cpp:1:
+C:\Users\glade_qmxy3yu\.gradle\caches\transforms-3\da9ad472860049f936d9f5329063fadc\transformed\api-cpp-5.21.3-headers/ctre/phoenix/motorcontrol/can/TalonFX.h:152:11: note:                 class ctre::phoenix::motorcontrol::can::TalonFX
+     class TalonFX : public virtual BaseTalon
+           ^~~~~~~
+C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\cpp\RobotContainer.cpp: In member function 'void RobotContainer::ConfigureButtonBindings()':
+C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\cpp\RobotContainer.cpp:15:89: error: no match for call to '(SpinMotor) ()'
+   frc2::JoystickButton(&controller, frc::XboxController::Button::kA).WhenHeld(motorSpin());
+                                                                                         ^
+
+compiling SpinMotor.cpp failed.
+In file included from C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\cpp\commands\SpinMotor.cpp:1:0:
+C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\include/commands/SpinMotor.h:10:29: error: expected ')' before '*' token
+   explicit SpinMotor(TalonFX* subsystem);
+                             ^
+In file included from C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\cpp\commands\SpinMotor.cpp:1:0:
+C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\include/commands/SpinMotor.h:19:3: error: reference to 'TalonFX' is ambiguous
+   TalonFX* m_subsystem;
+   ^~~~~~~
+In file included from C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\include/commands/SpinMotor.h:6:0,
+                 from C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\cpp\commands\SpinMotor.cpp:1:
+C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\include/subsystems/TalonFX.h:6:7: note: candidates are: class TalonFX
+ class TalonFX : public frc2::SubsystemBase {
+       ^~~~~~~
+In file included from C:\Users\glade_qmxy3yu\.gradle\caches\transforms-3\da9ad472860049f936d9f5329063fadc\transformed\api-cpp-5.21.3-headers/ctre/Phoenix.h:21:0,
+                 from C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\include/subsystems/TalonFX.h:4,
+                 from C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\include/commands/SpinMotor.h:6,
+                 from C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\cpp\commands\SpinMotor.cpp:1:
+C:\Users\glade_qmxy3yu\.gradle\caches\transforms-3\da9ad472860049f936d9f5329063fadc\transformed\api-cpp-5.21.3-headers/ctre/phoenix/motorcontrol/can/TalonFX.h:152:11: note:                 class ctre::phoenix::motorcontrol::can::TalonFX
+     class TalonFX : public virtual BaseTalon
+           ^~~~~~~
+C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\cpp\commands\SpinMotor.cpp:3:21: error: expected constructor, destructor, or type conversion before '(' token
+ SpinMotor::SpinMotor(TalonFX* subsystem) : m_subsystem{subsystem} { //constructor
+                     ^
+C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\cpp\commands\SpinMotor.cpp:3:67: error: expected unqualified-id before '{' token
+ SpinMotor::SpinMotor(TalonFX* subsystem) : m_subsystem{subsystem} { //constructor
+                                                                   ^
+
+compiling Robot.cpp failed.
+In file included from C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\include/RobotContainer.h:6:0,
+                 from C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\include/Robot.h:6,
+                 from C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\cpp\Robot.cpp:1:
+C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\include/commands/SpinMotor.h:10:29: error: expected ')' before '*' token
+   explicit SpinMotor(TalonFX* subsystem);
+                             ^
+In file included from C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\include/RobotContainer.h:6:0,
+                 from C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\include/Robot.h:6,
+                 from C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\cpp\Robot.cpp:1:
+C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\include/commands/SpinMotor.h:19:3: error: reference to 'TalonFX' is ambiguous
+   TalonFX* m_subsystem;
+   ^~~~~~~
+In file included from C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\include/commands/SpinMotor.h:6:0,
+                 from C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\include/RobotContainer.h:6,
+                 from C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\include/Robot.h:6,
+                 from C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\cpp\Robot.cpp:1:
+C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\include/subsystems/TalonFX.h:6:7: note: candidates are: class TalonFX
+ class TalonFX : public frc2::SubsystemBase {
+       ^~~~~~~
+In file included from C:\Users\glade_qmxy3yu\.gradle\caches\transforms-3\da9ad472860049f936d9f5329063fadc\transformed\api-cpp-5.21.3-headers/ctre/Phoenix.h:21:0,
+                 from C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\include/subsystems/TalonFX.h:4,
+                 from C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\include/commands/SpinMotor.h:6,
+                 from C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\include/RobotContainer.h:6,
+                 from C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\include/Robot.h:6,
+                 from C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\cpp\Robot.cpp:1:
+C:\Users\glade_qmxy3yu\.gradle\caches\transforms-3\da9ad472860049f936d9f5329063fadc\transformed\api-cpp-5.21.3-headers/ctre/phoenix/motorcontrol/can/TalonFX.h:152:11: note:                 class ctre::phoenix::motorcontrol::can::TalonFX
+     class TalonFX : public virtual BaseTalon
+           ^~~~~~~
+In file included from C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\include/Robot.h:6:0,
+                 from C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\cpp\Robot.cpp:1:
+C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\include/RobotContainer.h:17:3: error: reference to 'TalonFX' is ambiguous
+   TalonFX motor;
+   ^~~~~~~
+In file included from C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\include/commands/SpinMotor.h:6:0,
+                 from C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\include/RobotContainer.h:6,
+                 from C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\include/Robot.h:6,
+                 from C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\cpp\Robot.cpp:1:
+C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\include/subsystems/TalonFX.h:6:7: note: candidates are: class TalonFX
+ class TalonFX : public frc2::SubsystemBase {
+       ^~~~~~~
+In file included from C:\Users\glade_qmxy3yu\.gradle\caches\transforms-3\da9ad472860049f936d9f5329063fadc\transformed\api-cpp-5.21.3-headers/ctre/Phoenix.h:21:0,
+                 from C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\include/subsystems/TalonFX.h:4,
+                 from C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\include/commands/SpinMotor.h:6,
+                 from C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\include/RobotContainer.h:6,
+                 from C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\include/Robot.h:6,
+                 from C:\Users\glade_qmxy3yu\Desktop\Robotics\CommandTest\src\main\cpp\Robot.cpp:1:
+C:\Users\glade_qmxy3yu\.gradle\caches\transforms-3\da9ad472860049f936d9f5329063fadc\transformed\api-cpp-5.21.3-headers/ctre/phoenix/motorcontrol/can/TalonFX.h:152:11: note:                 class ctre::phoenix::motorcontrol::can::TalonFX
+     class TalonFX : public virtual BaseTalon
+           ^~~~~~~
+
+Finished compileFrcUserProgramLinuxathenaDebugExecutableFrcUserProgramCpp, see full log file:///C:/Users/glade_qmxy3yu/Desktop/Robotics/CommandTest/build/tmp/compileFrcUserProgramLinuxathenaDebugExecutableFrcUserProgramCpp/output.txt.

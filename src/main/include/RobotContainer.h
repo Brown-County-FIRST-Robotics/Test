@@ -1,10 +1,10 @@
 #pragma once
 
 #include <frc2/command/Command.h>
-#include <frc/XBoxController.h> //probably wrong, fix later
+#include <frc/XboxController.h>
 
 #include "commands/SpinMotor.h"
-#include "subsystems/TalonFX.h"
+#include "subsystems/Motors.h"
 
 class RobotContainer {
  public:
@@ -14,8 +14,8 @@ class RobotContainer {
   // The robot's subsystems and commands are defined here...
   frc::XboxController controller{0};
   
-  TalonFX motor;
-  SpinMotor motorSpin;
+  Motors motors;
+  SpinMotor spinMotor;
 
   void ConfigureButtonBindings();
 };

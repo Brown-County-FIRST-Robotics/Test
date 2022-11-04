@@ -1,4 +1,4 @@
-See file:///G:/Robotics/CommandTest/build/tmp/linkFrcUserProgramLinuxathenaReleaseExecutable/output.txt for all output for linkFrcUserProgramLinuxathenaReleaseExecutable.
+See file:///home/colin/Documents/Test/build/tmp/linkFrcUserProgramLinuxathenaReleaseExecutable/output.txt for all output for linkFrcUserProgramLinuxathenaReleaseExecutable.
 linking frcUserProgram successful.
 
-Finished linkFrcUserProgramLinuxathenaReleaseExecutable, see full log file:///G:/Robotics/CommandTest/build/tmp/linkFrcUserProgramLinuxathenaReleaseExecutable/output.txt.
+Finished linkFrcUserProgramLinuxathenaReleaseExecutable, see full log file:///home/colin/Documents/Test/build/tmp/linkFrcUserProgramLinuxathenaReleaseExecutable/output.txt.

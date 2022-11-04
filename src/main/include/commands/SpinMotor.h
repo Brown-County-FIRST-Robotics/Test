@@ -3,11 +3,11 @@
 #include <frc2/command/CommandBase.h>
 #include <frc2/command/CommandHelper.h>
 
-#include "subsystems/TalotnFX.h" //Subsystem requirements
+#include "subsystems/Motors.h" //Subsystem requirements
 
-class SpinMotor : public frc2::CommandHelper<frc2::CommandBase, SpinMotor> { //always use CommandHelper()
+class SpinMotor : public frc2::CommandHelper<frc2::CommandBase, SpinMotor> { //always use CommandHelper
  public:
-  explicit SpinMotor(TalonFX* subsystem);
+  explicit SpinMotor(Motors* subsystem);
 
   void Initialize() override; //Called once at the beginning
   
@@ -16,5 +16,5 @@ class SpinMotor : public frc2::CommandHelper<frc2::CommandBase, SpinMotor> { //a
   //void IsFinished() override; tells whether the command has finished, checked once per frame, without it the command never ends
 	
  private:
-  TalonFX* m_subsystem;
+  Motors* m_subsystem;
 };

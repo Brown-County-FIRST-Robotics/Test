@@ -16,5 +16,5 @@ class SpinMotor : public frc2::CommandHelper<frc2::CommandBase, SpinMotor> { //a
   //void IsFinished() override; tells whether the command has finished, checked once per frame, without it the command never ends
 	
  private:
-  Motors* m_subsystem;
+  Motors* motors;
 };

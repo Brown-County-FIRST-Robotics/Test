@@ -14,7 +14,7 @@ class RobotContainer {
   // The robot's subsystems and commands are defined here...
   frc::XboxController controller{0};
   
-  Motors* motors;
+  Motors* p_motors;
   SpinMotor spinMotor;
 
   void ConfigureButtonBindings();

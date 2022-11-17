@@ -1,7 +1,8 @@
 #include "commands/SpinMotor.h"
 
-SpinMotor::SpinMotor(Motors* subsystem) : motors{subsystem} {
+SpinMotor::SpinMotor(Motors* subsystem){
 	AddRequirements(subsystem);
+	motors = new Motors();
 }
 
 void SpinMotor::Initialize() {

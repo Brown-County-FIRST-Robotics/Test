@@ -16,6 +16,6 @@ class Motors : public frc2::SubsystemBase {
 
   private:
     //subsystem components such as motors
-    //WPI_TalonFX tfx;
-    frc::AnalogOutput out;
+    WPI_TalonFX tfx;
+    //frc::AnalogOutput out;
 };

@@ -1,12 +1,13 @@
 #include "subsystems/Motors.h"
+#include <iostream>
 
-Motors::Motors() : out{0} {} //constructor
+Motors::Motors() : tfx{0} {} //constructor
 
 void Motors::SetTfx(bool turnOn) {
   if (turnOn) {
-    out.SetVoltage(0);
+      tfx.Set(0.7);
   }
   else {
-    out.SetVoltage(0);
+    tfx.Set(0);
   }
 }

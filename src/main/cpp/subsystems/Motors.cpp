@@ -1,13 +1,13 @@
 #include "subsystems/Motors.h"
 #include <iostream>
+#include <rev/CANSparkMax.h>
 
-Motors::Motors() : tfx{0} {} //constructor
+Motors::Motors() : tfx{1}, tsrx{0} {} //constructor
 
-void Motors::SetTfx(bool turnOn) {
-  if (turnOn) {
-      tfx.Set(0.7);
-  }
-  else {
-    tfx.Set(0);
-  }
+void Motors::SetTfx(double speed) {
+  tfx.Set(speed);
+}
+
+void Motors::SetSparkMax(double speed) {
+  tsrx.Set(speed);
 }

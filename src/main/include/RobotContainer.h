@@ -3,7 +3,8 @@
 #include <frc2/command/Command.h>
 #include <frc/XboxController.h>
 
-#include "commands/SpinMotor.h"
+#include "commands/SpinTfx.h"
+#include "commands/SpinTsrx.h"
 #include "subsystems/Motors.h"
 
 class RobotContainer {
@@ -15,7 +16,8 @@ class RobotContainer {
   frc::XboxController controller{0};
   
   Motors* p_motors;
-  SpinMotor spinMotor;
+  SpinTfx spinTfx;
+  SpinTsrx spinTsrx;
 
   void ConfigureButtonBindings();
 };

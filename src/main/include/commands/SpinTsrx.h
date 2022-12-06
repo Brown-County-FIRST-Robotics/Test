@@ -5,9 +5,9 @@
 
 #include "subsystems/Motors.h" //Subsystem requirements
 
-class SpinMotor : public frc2::CommandHelper<frc2::CommandBase, SpinMotor> { //always use CommandHelper
+class SpinTsrx : public frc2::CommandHelper<frc2::CommandBase, SpinTsrx> { //always use CommandHelper
  public:
-  explicit SpinMotor(Motors* subsystem);
+  explicit SpinTsrx(Motors* subsystem);
 
   void Initialize() override; //Called once at the beginning
   

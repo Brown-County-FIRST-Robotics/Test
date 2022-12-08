@@ -6,11 +6,11 @@ SpinTsrx::SpinTsrx(Motors* subsystem){
 }
 
 void SpinTsrx::Initialize() {
-	motors->SetTfx(.7);
+	motors->SetTsrx(.7);
 }
 
 void SpinTsrx::End(bool interrupted) {
-	motors->SetTfx(.7);
+	motors->SetTsrx(0);
 }
 
 //bool SpinTfx::IsFinished() { } return whether it should finish

@@ -12,7 +12,7 @@ class Motors : public frc2::SubsystemBase {
   //void Periodic() override; //there are built in methods such as this, which is called once per frame
 
   void SetTfx(double speed); //Declare your own methods like so
-  void SetSparkMax(double speed);
+  void SetTsrx(double speed);
 
   private:
     //subsystem components such as motors

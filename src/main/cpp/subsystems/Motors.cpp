@@ -8,6 +8,6 @@ void Motors::SetTfx(double speed) {
   tfx.Set(speed);
 }
 
-void Motors::SetSparkMax(double speed) {
+void Motors::SetTsrx(double speed) {
   tsrx.Set(speed);
 }
